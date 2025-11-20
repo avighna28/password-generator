@@ -67,6 +67,7 @@ textarea {
 /* Buttons */
 .buttons {
   display: flex;
+position: absolute;
 }
 
 .btn {
@@ -80,6 +81,7 @@ textarea {
   font-size: 16px;
   color: var(--text);
   border-radius: 8px;
+position: absolute;
 }
 
 .btn:hover {

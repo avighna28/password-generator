@@ -50,10 +50,11 @@ h2 {
   width: 100%;
   margin-bottom: 30px;
   display: flex;
-  position: relative;
+  /* position: relative; - REMOVED */
 }
 
-textarea {
+/* Targetting the input box */
+.result-container input[type="text"] {
   background: transparent;
   border: none;
   color: var(--text);
@@ -61,27 +62,29 @@ textarea {
   width: 100%;
   padding: 10px;
   outline: none;
-  resize: none;
+  /* resize: none; - REMOVED (not applicable to input) */
 }
 
-/* Buttons */
+/* Buttons Container */
 .buttons {
-  display: flex;
-position: absolute;
+  display: flex; /* Use flexbox to align buttons */
+  justify-content: space-between; /* Space out the buttons */
+  margin-top: 20px; 
+  /* position: absolute; - REMOVED */
 }
 
 .btn {
-  width: 50%;
+  flex-grow: 1; /* Makes both buttons take equal width */
   border: none;
   background: var(--bg);
   filter: var(--shadow-2);
   padding: 10px;
-  margin: 10px 5px;
+  margin: 10px 5px; /* Added margins for spacing */
   cursor: pointer;
   font-size: 16px;
   color: var(--text);
   border-radius: 8px;
-position: absolute;
+  /* position: absolute; - REMOVED */
 }
 
 .btn:hover {
@@ -106,7 +109,7 @@ input[type="number"] {
   .result-container {
     height: 50px;
   }
-  textarea {
+  .result-container input[type="text"] {
     font-size: 16px;
   }
 }

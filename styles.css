@@ -2,114 +2,111 @@
 
 /* Simple Neumorphism Variables */
 :root {
-  --bg: #eef0f4;
-  --text: #333;
-  --shadow-1: drop-shadow(-8px -8px 12px #ffffff)
-              drop-shadow(8px 8px 12px #c3c5c8);
-  --shadow-2: drop-shadow(-4px -4px 6px #ffffff)
-              drop-shadow(4px 4px 6px #c3c5c8);
-  --shadow-3: drop-shadow(-2px -2px 3px #ffffff)
-              drop-shadow(2px 2px 3px #c3c5c8);
+--bg: #eef0f4;
+--text: #333;
+--shadow-1: drop-shadow(-8px -8px 12px #ffffff)
+drop-shadow(8px 8px 12px #c3c5c8);
+--shadow-2: drop-shadow(-4px -4px 6px #ffffff)
+drop-shadow(4px 4px 6px #c3c5c8);
+--shadow-3: drop-shadow(-2px -2px 3px #ffffff)
+drop-shadow(2px 2px 3px #c3c5c8);
 }
 
 /* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
+
 body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: "Muli", sans-serif;
+background: var(--bg);
+color: var(--text);
+font-family: "Muli", sans-serif;
 }
 
 h2 {
-  margin: 15px 0 20px;
-  text-align: center;
+margin: 15px 0 20px;
+text-align: center;
 }
 
 .container {
-  width: 350px;
-  max-width: 100%;
-  margin: auto;
-  padding: 20px;
-  background: var(--bg);
-  border: 12px solid var(--bg);
-  filter: var(--shadow-1);
-  border-radius: 10px;
+width: 350px;
+max-width: 100%;
+margin: auto;
+padding: 20px;
+background: var(--bg);
+border: 12px solid var(--bg);
+filter: var(--shadow-1);
+border-radius: 10px;
 }
 
 /* Result Box */
 .result-container {
-  background: var(--bg);
-  border: 12px solid var(--bg);
-  filter: var(--shadow-2);
-  height: 60px;
-  width: 100%;
-  margin-bottom: 30px;
-  display: flex;
-  /* position: relative; - REMOVED */
+background: var(--bg);
+border: 12px solid var(--bg);
+filter: var(--shadow-2);
+height: 60px;
+width: 100%;
+margin-bottom: 30px;
+display: flex;
+position: relative;
 }
 
-/* Targetting the input box */
-.result-container input[type="text"] {
-  background: transparent;
-  border: none;
-  color: var(--text);
-  font-size: 18px;
-  width: 100%;
-  padding: 10px;
-  outline: none;
-  /* resize: none; - REMOVED (not applicable to input) */
+textarea {
+background: transparent;
+border: none;
+color: var(--text);
+font-size: 18px;
+width: 100%;
+padding: 10px;
+outline: none;
+resize: none;
 }
 
-/* Buttons Container */
+/* Buttons */
 .buttons {
-  display: flex; /* Use flexbox to align buttons */
-  justify-content: space-between; /* Space out the buttons */
-  margin-top: 20px; 
-  /* position: absolute; - REMOVED */
+display: flex;
 }
 
 .btn {
-  flex-grow: 1; /* Makes both buttons take equal width */
-  border: none;
-  background: var(--bg);
-  filter: var(--shadow-2);
-  padding: 10px;
-  margin: 10px 5px; /* Added margins for spacing */
-  cursor: pointer;
-  font-size: 16px;
-  color: var(--text);
-  border-radius: 8px;
-  /* position: absolute; - REMOVED */
+width: 50%;
+border: none;
+background: var(--bg);
+filter: var(--shadow-2);
+padding: 10px;
+margin: 10px 5px;
+cursor: pointer;
+font-size: 16px;
+color: var(--text);
+border-radius: 8px;
 }
 
 .btn:hover {
-  filter: var(--shadow-3);
-  transition: 0.2s ease-in-out;
+filter: var(--shadow-3);
+transition: 0.2s ease-in-out;
 }
 
 /* Settings */
 .setting {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px 0;
+display: flex;
+justify-content: space-between;
+margin: 15px 0;
 }
 
 input[type="checkbox"],
 input[type="number"] {
-  cursor: pointer;
+cursor: pointer;
 }
 
 /* Mobile Fix */
 @media (max-width: 400px) {
-  .result-container {
-    height: 50px;
-  }
-  .result-container input[type="text"] {
-    font-size: 16px;
-  }
+.result-container {
+height: 50px;
 }
+textarea {
+font-size: 16px;
+}
+}.  Follow git hun button peeche chala gaya hai usko uper lana hai position absolute kr do uper a jayi  code yahi hona chiye

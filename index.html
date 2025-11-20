@@ -9,25 +9,23 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        /* This inline CSS is adjusted to position the 'Follow' button correctly */
         nav {
             display: flex;
-            justify-content: flex-end; /* Keeps any other elements to the right */
+            justify-content: flex-end;
             padding: 20px 24px;
         }
 
         .navbtn {
-            /* Pushes the 'Follow' button to the left edge of the 'nav' container */
-            margin-right: auto; 
+            position: absolute;
+            left: 2rem;
             margin-top: 0.3rem;
-            /* position: absolute; - REMOVED */
-            /* left: 2rem; - REMOVED */
         }
     </style>
 </head>
 
 <body>
 
+    <!-- Only GitHub button kept -->
     <nav>
         <div class="navbtn">
             <a class="github-button" href="https://github.com/avighna28"
@@ -40,7 +38,7 @@
         <h2>Password Generator</h2>
 
         <div class="result-container">
-            <input type="text" id="PasswordResult" readonly /> 
+            <textarea id="PasswordResult"></textarea>
         </div>
 
         <div class="settings">
@@ -72,10 +70,10 @@
 
         <div class="buttons">
             <button class="btn btn-large" id="generateBtn">
-                Generate
+                <i class="fas fa-key"></i> Generate
             </button>
             <button class="btn" id="clipboardBtn">
-                Copy
+                <i class="far fa-clipboard"></i> Copy
             </button>
         </div>
     </div>
